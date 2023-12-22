@@ -37,9 +37,9 @@ ADMIN_CORS="https://medusa-test-project.vercel.app"
 STORE_CORS=/vercel\.app$/
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://localhost/medusa-stpostgres://medusa_server_database_ql7d_user:OdGQNkf8TlLwv064tmyoIzSCOGbqPT0U@dpg-cm2u0qa1hbls73ftl3h0-a.oregon-postgres.render.com/medusa_server_database_ql7darter-default";
+  process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
 
-const REDIS_URL = process.env.REDIS_URL || "redis://red-cm2u4521hbls73ftmeq0:6379";
+const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
 const plugins = [
   `medusa-fulfillment-manual`,
