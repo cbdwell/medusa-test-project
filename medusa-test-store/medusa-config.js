@@ -29,8 +29,8 @@ try {
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 // Allow all HTTP requests
-ADMIN_CORS=/http:\/\/*/
-// ADMIN_CORS="https://medusa-test-project.vercel.app"
+// ADMIN_CORS=/http:\/\/*/
+ADMIN_CORS="https://medusa-test-project.vercel.app"
 
 // CORS FOR PRODUCTION //
 // Allow any origin ending with vercel.app. For example, storefront.vercel.app
