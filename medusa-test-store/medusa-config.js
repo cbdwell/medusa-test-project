@@ -22,11 +22,18 @@ try {
 } catch (e) {}
 
 // CORS when consuming Medusa from admin
-const ADMIN_CORS =
-  process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
+// const ADMIN_CORS =
+//   process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
 
 // CORS to avoid issues when consuming Medusa from a client
-const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
+// const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
+
+// Allow all HTTP requests
+ADMIN_CORS=/http:\/\/*/
+
+// CORS FOR PRODUCTION //
+// Allow any origin ending with vercel.app. For example, storefront.vercel.app
+STORE_CORS=/vercel\.app$/
 
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
