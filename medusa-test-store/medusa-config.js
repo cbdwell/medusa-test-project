@@ -37,7 +37,7 @@ const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 // STORE_CORS=/vercel\.app$/
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgresql://postgres:1E63EgaAC3gc4cCdgFgEa6cFfDB-D2G6@monorail.proxy.rlwy.net:32142/railway";
+  process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
