@@ -22,22 +22,22 @@ try {
 } catch (e) {}
 
 // CORS when consuming Medusa from admin
-// const ADMIN_CORS =
-  // process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
+const ADMIN_CORS =
+  process.env.ADMIN_CORS || "http://localhost:7000,http://localhost:7001";
 
 // CORS to avoid issues when consuming Medusa from a client
 const STORE_CORS = process.env.STORE_CORS || "http://localhost:8000";
 
 // Allow all HTTP requests
 // ADMIN_CORS=/http:\/\/*/
-ADMIN_CORS="https://medusa-test-project.vercel.app"
+// ADMIN_CORS="https://medusa-test-project.vercel.app/"
 
 // CORS FOR PRODUCTION //
 // Allow any origin ending with vercel.app. For example, storefront.vercel.app
 // STORE_CORS=/vercel\.app$/
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgres://localhost/medusa-starter-default";
+  process.env.DATABASE_URL || "postgresql://postgres:1E63EgaAC3gc4cCdgFgEa6cFfDB-D2G6@monorail.proxy.rlwy.net:32142/railway";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
