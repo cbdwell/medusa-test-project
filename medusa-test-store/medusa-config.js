@@ -60,6 +60,14 @@ const plugins = [
       },
     },
   },
+  {
+    resolve: "medusa-plugin-mailjet",
+    options:  {
+      api_key:  process.env.MAILJET_API_KEY,
+      from: process.env.MAILJET_FROM,
+      order_placed_template: "5493512",
+    }
+  }
 ];
 
 const modules = {
